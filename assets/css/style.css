@@ -33,7 +33,7 @@ main{
     
 }
 
-#initial-block{
+.initial-block{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,3 +73,25 @@ main{
     padding: 10px;
     font-weight: bold;
 }
+
+.initial-input{
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    height: 100%;
+}
+
+.hs-odd{
+    padding: 4px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.hs-even{
+    padding: 4px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+
