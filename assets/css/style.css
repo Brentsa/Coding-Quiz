@@ -1,3 +1,4 @@
+/* base classes */
 :root{
     --primary-color:  rgb(71, 17, 71); 
     --secondary-color: rgb(133, 4, 255);
@@ -50,8 +51,8 @@ main{
 
 .block-item{
     margin: 10px;
+    text-align: center;
 }
-
 
 .btn{
     background-color: var(--primary-color);
@@ -76,10 +77,12 @@ main{
 }
 
 .status-box{
+    margin-top: 20px;
     border-top: 2px solid lightgray;
-    color: lightgray;
+    color: var(--secondary-color);
     padding: 10px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .initial-input{
