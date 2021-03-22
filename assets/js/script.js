@@ -237,7 +237,7 @@ function initHighScore(){
 
 //Adds the score object entered by the user into our highscore array
 function createScoreObject(){
-    var initials = document.querySelector("input[name='hs-input'").value;
+    var initials = document.querySelector("input").value;
     var scoreItem = {initials: initials, score: time};
     highScores.push(scoreItem);
 }
