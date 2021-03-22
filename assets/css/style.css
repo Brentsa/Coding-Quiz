@@ -22,6 +22,11 @@ header{
     color: var(--secondary-color);
 }
 
+.view-scores:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 .time-remaining{
     margin: 20px 40px;
 }
@@ -39,6 +44,9 @@ main{
     align-items: center;
 }
 
+.question-block{
+    width: 600px;
+}
 
 .block-item{
     margin: 10px;
