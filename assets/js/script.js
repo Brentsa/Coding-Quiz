@@ -8,7 +8,7 @@ var questions = [
 ]
 
 //Array to hold the highscores
-var highScores = [];
+var highScores = new Array();
 
 //Initialize reference to the quiz block
 var quizBlockMain = document.querySelector(".quiz-block");
@@ -310,7 +310,7 @@ function saveScores(){
 function loadScores(){
     var savedScores = localStorage.getItem("scores");
 
-    if(!savedScores){ highScores = [];}
+    if(!savedScores){ highScores = new Array();}
    
     highScores = JSON.parse(savedScores);
 }
