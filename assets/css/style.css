@@ -1,3 +1,4 @@
+/* base classes */
 :root{
     --primary-color:  rgb(71, 17, 71); 
     --secondary-color: rgb(133, 4, 255);
@@ -22,6 +23,11 @@ header{
     color: var(--secondary-color);
 }
 
+.view-scores:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 .time-remaining{
     margin: 20px 40px;
 }
@@ -33,18 +39,20 @@ main{
     
 }
 
-.quiz-block{
+.initial-block{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
 }
 
+.question-block{
+    width: 600px;
+}
 
 .block-item{
     margin: 10px;
+    text-align: center;
 }
-
 
 .btn{
     background-color: var(--primary-color);
@@ -58,3 +66,43 @@ main{
 .btn:hover{
     background-color: var(--secondary-color);
 }
+
+
+/* dynamically generated classes */
+.button-container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 20px 0;
+}
+
+.status-box{
+    margin-top: 20px;
+    border-top: 2px solid lightgray;
+    color: var(--secondary-color);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.initial-input{
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    height: 100%;
+}
+
+.hs-odd{
+    padding: 4px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.hs-even{
+    padding: 4px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+
