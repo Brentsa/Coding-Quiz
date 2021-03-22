@@ -154,7 +154,8 @@ function initQuiz(){
     questionCount = 0;
     pageIndex = 1;
     document.querySelector("#time").textContent = "Score: " + time;
-    loadScores();
+    //loadScores();
+
 
     initStartScreen();
 }
